@@ -1,0 +1,16 @@
+The Nautilus DevOps team is migrating services to Azure. They are breaking down tasks to ensure better control and optimization. You are tasked with attaching an existing data disk to a virtual machine (VM).
+
+An existing VM named datacenter-vm and a managed disk named datacenter-disk already exist in the East US region.
+
+Attach the disk datacenter-disk to the VM datacenter-vm as a data disk.
+Ensure the disk is attached to the VM datacenter-vm.
+Make sure that the virtual machine initialization has been completed before submitting this task.
+
+
+Use below given Azure Credentials: (You can run the showcreds command on the azure-client host to retrieve credentials)
+
+Portal URL	https://portal.azure.com
+Username	kk_lab_user_main-c320d0235c304287@azurefreekmlprod.onmicrosoft.com
+Password	R95MwcHy
+Start Time	Tue Jan 06 04:08:10 UTC 2026
+End Time	Tue Jan 06 05:08:10 UTC 2026
