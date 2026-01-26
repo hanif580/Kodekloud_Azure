@@ -1,0 +1,13 @@
+As part of the data migration process, the Nautilus DevOps team is actively creating several storage containers on Azure. They plan to utilize public Blob containers to store the relevant data. Given the ongoing migration of other infrastructure to Azure, it is logical to consolidate data storage within the Azure environment as well.
+
+Create a new storage account named xfusionst24804 and a public Blob container named xfusion-blob-29694 within the storage account. Make sure anonymous read access for containers and blobs is enabled.
+
+
+
+Use below given Azure Credentials: (You can run the showcreds command on the azure-client host to retrieve credentials)
+
+Portal URL	https://portal.azure.com
+Username	kk_lab_user_main-bffcd316a39e418b@azurefreekmlprod.onmicrosoft.com
+Password	umAP#f&e
+Start Time	Mon Jan 19 04:43:01 UTC 2026
+End Time	Mon Jan 19 05:43:01 UTC 2026

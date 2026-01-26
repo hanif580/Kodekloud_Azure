@@ -1,0 +1,18 @@
+The Nautilus DevOps team is presently immersed in data migrations, transferring data from on-premise storage systems to Azure Blob containers. They have recently received some data that they intend to copy to one of the Blob containers.
+
+A Blob container named datacenter-blob-12580 already exists in the East US region under the storage account datacenterst28475. Copy the file /tmp/datacenter.txt to the Blob container datacenter-blob-12580.
+
+Use below given Azure Credentials: (You can run the showcreds command on azure-client host to retrieve these credentials)
+
+Portal URL	https://portal.azure.com
+Username	kk_lab_user_main-094cecc77b8744ef@azurefreekmlprod.onmicrosoft.com
+Password	9Fbb8uSa
+Start Time	Mon Jan 19 04:53:15 UTC 2026
+End Time	Mon Jan 19 05:53:15 UTC 2026
+************************************************
+az storage blob upload \
+    --account-name datacenterst28475 \
+    --container-name datacenter-blob-12580 \
+    --name datacenter.txt \
+    --file /tmp/datacenter.txt \
+    --auth-mode login

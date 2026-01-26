@@ -1,0 +1,25 @@
+The Nautilus DevOps Team has received a new request from the Development Team to set up a new Azure Virtual Machine (VM). This VM will be used to host a new application that requires a stable public IP address. To ensure that the VM has a consistent public IP, a Static Public IP address needs to be associated with it. The VM will be named devops-vm, and the Static Public IP will be named devops-pip. This setup will help the Development Team to have a reliable and consistent access point for their application.
+
+Create an Azure VM named devops-vm using any available Ubuntu image, with the VM size Standard_B1s.
+Generate an SSH public key on the azure-client host and associate it with the VM for SSH access.
+Associate a Static Public IP address named devops-pip with this VM.
+Ensure the VM is accessible via SSH using the generated public key.
+
+Use below given Azure Credentials: (You can run the showcreds command on the azure-client host to retrieve these credentials)
+
+Portal URL	https://portal.azure.com
+Username	kk_lab_user_main-e87fa2bb788142db@azurefreekmlprod.onmicrosoft.com
+Password	6XH#F3$#
+Start Time	Tue Jan 20 03:42:18 UTC 2026
+End Time	Tue Jan 20 04:42:18 UTC 2026
+
+Notes:
+
+Perform all operations in the East US region.
+
+*****************************************************************************************
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/nautilus_key -N ""
+ssh -i ~/.ssh/nautilus_key azureuser@<STATIC_PUBLIC_IP>
+
