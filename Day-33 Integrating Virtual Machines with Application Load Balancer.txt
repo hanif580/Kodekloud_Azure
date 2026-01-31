@@ -1,0 +1,18 @@
+The Nautilus DevOps team is currently working on setting up a simple application on the Azure cloud. They aim to establish an Azure Load Balancer in front of a Virtual Machine (VM) where an Nginx server is currently running. While the Nginx server currently serves a sample page, the team plans to deploy the actual application later.
+
+Set up an Azure Load Balancer named nautilus-lb.
+Configure the Load Balancer’s frontend IP configuration with the name nautilus-lb-ip and assign a public IP address with the same name (nautilus-lb-ip).
+Create a backend pool named nautilus-backend-pool and add the VM running Nginx to this pool.
+Create a health probe named nautilus-health-probe on port 80 to check the VM's health.
+Set up a load balancer rule named nautilus-lb-rule to route traffic on port 80 to the backend pool on port 80.
+Add an inbound rule to the existing NSG of the VM to allow HTTP traffic on port 80.
+
+
+
+Use the Azure Portal URL and login credentials below:
+
+Console URL	https://portal.azure.com/azurefreekmlprod.onmicrosoft.com
+Username	kk_lab_user_main-2baf491b85104573@azurefreekmlprod.onmicrosoft.com
+Password	YndYNt%V
+Start Time	Sat Jan 31 08:49:56 UTC 2026
+End Time	Sat Jan 31 09:49:56 UTC 2026
